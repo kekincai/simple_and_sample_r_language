@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R语言入门",
+    "section": "",
+    "text": "前言\n这是一本关于R语言入门的小册子。"
+  },
+  {
+    "objectID": "index.html#目录",
+    "href": "index.html#目录",
+    "title": "R语言入门",
+    "section": "目录",
+    "text": "目录\n\nR语言入门\n向量及其运算\nMatrix & Dataframe & List\n函数 & 程序流程控制\n数据导入 &导出\n数据可视化\n代码优化 & 并行"
+  },
+  {
+    "objectID": "index.html#写作目的",
+    "href": "index.html#写作目的",
+    "title": "R语言入门",
+    "section": "写作目的",
+    "text": "写作目的\nR语言是一门非常实用且易于扩展的脚本语言。在数据分析中得到了广泛的应用。 这本小册子我想把工作中受到的严格训练总结出来分享给大家。\n本书基本上是介绍base R的用法，在可重复性研究上，使用基础的R语法会让后来人很方便的复现当时的结果。"
+  },
+  {
+    "objectID": "index.html#本书代码执行环境",
+    "href": "index.html#本书代码执行环境",
+    "title": "R语言入门",
+    "section": "本书代码执行环境",
+    "text": "本书代码执行环境\n\n\n    machine  : arm64\n    platform : aarch64-apple-darwin20\n    version  : R version 4.3.1 (2023-06-16)\n               Beagle Scouts"
+  },
+  {
+    "objectID": "01_R语言入门.html#r语言历史",
+    "href": "01_R语言入门.html#r语言历史",
+    "title": "1  R语言入门",
+    "section": "1.1 R语言历史",
+    "text": "1.1 R语言历史"
+  },
+  {
+    "objectID": "01_R语言入门.html#r语言适合做什么",
+    "href": "01_R语言入门.html#r语言适合做什么",
+    "title": "1  R语言入门",
+    "section": "1.2 R语言适合做什么",
+    "text": "1.2 R语言适合做什么"
+  },
+  {
+    "objectID": "01_R语言入门.html#r语言不足的地方",
+    "href": "01_R语言入门.html#r语言不足的地方",
+    "title": "1  R语言入门",
+    "section": "1.3 R语言不足的地方",
+    "text": "1.3 R语言不足的地方"
+  },
+  {
+    "objectID": "01_R语言入门.html#怎么学好一门编程语言",
+    "href": "01_R语言入门.html#怎么学好一门编程语言",
+    "title": "1  R语言入门",
+    "section": "1.4 怎么学好一门编程语言",
+    "text": "1.4 怎么学好一门编程语言"
+  }
+]

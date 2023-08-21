@@ -1,0 +1,31 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "R语言入门"
+  author: "金太阳无敌"
+  date: last-modified
+  date-format: "YYYY/MM/DD"
+  chapters:
+    - index.qmd
+    - 01_R语言入门.qmd
+    - 02_向量及其运算.qmd
+    - 03_matrix.qmd
+    - 04_函数及程序流程控制.qmd
+    - 05_数据导入导出.qmd
+    - 06_数据可视化.qmd
+    - 07_代码优化及并行.qmd
+    - references.qmd
+  cover-image: cover.png
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

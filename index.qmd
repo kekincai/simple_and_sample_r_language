@@ -1,0 +1,30 @@
+# 前言 {.unnumbered}
+
+这是一本关于R语言入门的小册子。
+
+## 目录
+
+* R语言入门
+* 向量及其运算
+* Matrix & Dataframe & List
+* 函数 & 程序流程控制
+* 数据导入 &导出
+* 数据可视化
+* 代码优化 & 并行
+
+## 写作目的
+R语言是一门非常实用且易于扩展的脚本语言。在数据分析中得到了广泛的应用。
+这本小册子我想把工作中受到的严格训练总结出来分享给大家。
+
+本书基本上是介绍base R的用法，在可重复性研究上，使用基础的R语法会让后来人很方便的复现当时的结果。
+
+## 本书代码执行环境
+```{r, echo=FALSE}
+sys.info <- Sys.info()
+message(
+    "    machine  : ", sys.info["machine"], "\n",
+    "    platform : ", R.version$platform, "\n",
+    "    version  : ", R.version$version.string, "\n",
+    "               ", R.version$nickname
+)
+```
