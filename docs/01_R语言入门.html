@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./02_向量及其运算.html" rel="next">
+<link href="./02_如何解题.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -112,38 +146,50 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_向量及其运算.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">向量及其运算</span></span></a>
+  <a href="./02_如何解题.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">如何解题</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_matrix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Matrix &amp; Dataframe &amp; List</span></span></a>
+  <a href="./03_代码及其他.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">代码 &amp; 脚本 &amp; 项目</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04_函数及程序流程控制.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">函数 &amp; 程序流程控制</span></span></a>
+  <a href="./04_向量及其运算.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">向量 &amp; 运算符</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_数据导入导出.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">数据导入 &amp;导出</span></span></a>
+  <a href="./05_matrix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Matrix &amp; Dataframe &amp; List</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06_数据可视化.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">数据可视化</span></span></a>
+  <a href="./06_函数及程序流程控制.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">函数 &amp; 程序流程控制</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07_代码优化及并行.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">代码优化 &amp; 并行</span></span></a>
+  <a href="./07_数据导入导出.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">数据导入 &amp;导出</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_数据可视化.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">数据可视化</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_代码优化及并行.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">代码优化 &amp; 并行</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -163,9 +209,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#r语言历史" id="toc-r语言历史" class="nav-link active" data-scroll-target="#r语言历史"><span class="header-section-number">1.1</span> R语言历史</a></li>
-  <li><a href="#r语言适合做什么" id="toc-r语言适合做什么" class="nav-link" data-scroll-target="#r语言适合做什么"><span class="header-section-number">1.2</span> R语言适合做什么</a></li>
-  <li><a href="#r语言不足的地方" id="toc-r语言不足的地方" class="nav-link" data-scroll-target="#r语言不足的地方"><span class="header-section-number">1.3</span> R语言不足的地方</a></li>
-  <li><a href="#怎么学好一门编程语言" id="toc-怎么学好一门编程语言" class="nav-link" data-scroll-target="#怎么学好一门编程语言"><span class="header-section-number">1.4</span> 怎么学好一门编程语言</a></li>
+  <li><a href="#谁在使用r语言" id="toc-谁在使用r语言" class="nav-link" data-scroll-target="#谁在使用r语言"><span class="header-section-number">1.2</span> 谁在使用R语言</a></li>
+  <li><a href="#为什么需要编程" id="toc-为什么需要编程" class="nav-link" data-scroll-target="#为什么需要编程"><span class="header-section-number">1.3</span> 为什么需要编程</a></li>
+  <li><a href="#如何解题" id="toc-如何解题" class="nav-link" data-scroll-target="#如何解题"><span class="header-section-number">1.4</span> 如何解题</a></li>
   </ul>
 </nav>
     </div>
@@ -189,17 +235,56 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Hello friend. Welcome to the world of R language!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Hello friend. Welcome to the world of R language!</code></pre>
+</div>
+</div>
+<p>欢迎来到R语言的世界！R语言，一种广泛用于统计计算和图形的编程语言，已经成为数据科学家和统计学家的首选工具之一（另一个是大家更为熟知的Python😂）。</p>
+<p>当你运行上面的代码，你会看到一个友好的欢迎消息。这只是开始，让我们深入了解R语言的世界。</p>
 <section id="r语言历史" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="r语言历史"><span class="header-section-number">1.1</span> R语言历史</h2>
+<p>R语言的起源可以追溯到1976年，当时它是由新西兰的Ross Ihaka和Robert Gentleman在奥克兰大学开发的。它是S语言的一个实现，S语言是由贝尔实验室的John Chambers和同事们在1976年开发的。在R语言的源代码中还有很多S语言的留存代码，后面我们会时不时深入了解一下R语言的具体实现。</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>不用担心，我们不必去学习其中的C语言和Fortran代码。</p>
+</div>
+</div>
+<p>R语言的名字来源于其创始人的名字首字母。</p>
+<p>R语言的开发是为了提供一个免费、开源的统计计算环境，它不仅仅是一个编程语言，还包括了一个高效的数据存储和处理工具，以及一套广泛的统计和图形功能。</p>
 </section>
-<section id="r语言适合做什么" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="r语言适合做什么"><span class="header-section-number">1.2</span> R语言适合做什么</h2>
+<section id="谁在使用r语言" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="谁在使用r语言"><span class="header-section-number">1.2</span> 谁在使用R语言</h2>
+<p>R语言在学术界和工业界都得到了广泛的应用。许多研究者使用R进行统计分析和数据可视化。在工业界，尤其是在金融、生物技术、市场研究和社交媒体领域，R语言也得到了广泛的应用。</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>国内同学，尤其是学习生物、医学的同学可能有更深的体会。</p>
+</div>
+</div>
+<p>得益于它的易扩展性，大公司如Google, Facebook, Airbnb和New York Times都在使用R语言进行数据分析。此外，R语言的社区也非常活跃，有数千个扩展包，涵盖了从生态学到金融的各种领域。</p>
 </section>
-<section id="r语言不足的地方" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="r语言不足的地方"><span class="header-section-number">1.3</span> R语言不足的地方</h2>
+<section id="为什么需要编程" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="为什么需要编程"><span class="header-section-number">1.3</span> 为什么需要编程</h2>
 </section>
-<section id="怎么学好一门编程语言" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="怎么学好一门编程语言"><span class="header-section-number">1.4</span> 怎么学好一门编程语言</h2>
+<section id="如何解题" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="如何解题"><span class="header-section-number">1.4</span> 如何解题</h2>
 
 
 </section>
@@ -445,8 +530,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./02_向量及其运算.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">向量及其运算</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./02_如何解题.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">如何解题</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
