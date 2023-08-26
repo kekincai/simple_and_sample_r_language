@@ -1,10 +1,10 @@
 ellipsis <- function(a, b, h, k, col = "steelblue", add = FALSE) {
     # @description: 画椭圆
-    # @param a: 长轴
-    # @param b: 短轴
-    # @param h: 中心点横坐标
-    # @param k: 中心点纵坐标
-    # @param col: 填充颜色
+    # @param a:     长轴
+    # @param b:     短轴
+    # @param h:     中心点横坐标
+    # @param k:     中心点纵坐标
+    # @param col:   填充颜色
     # @return: NULL
 
     ## 椭圆参数方程
@@ -40,10 +40,10 @@ logo <- function(
     h = 6 * res,
     pointsize = 12) {
     # @description: 使用 base R绘制封面 R语言的logo
-    # @param fn: 文件名
-    # @param res: 分辨率
-    # @param w: 宽度
-    # @param h: 高度
+    # @param fn:        文件名
+    # @param res:       分辨率
+    # @param w:         宽度
+    # @param h:         高度
     # @param pointsize: 字体大小
     # @return: NULL
     png(fn,
