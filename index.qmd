@@ -6,6 +6,9 @@
 
 当前版本：{{< var version >}}
 
+问题反馈：[{{< var email.feedback >}}](mailto:{{< var email.feedback >}}?subject=问题反馈)
+
+
 ## 目录
 
 * R语言入门
