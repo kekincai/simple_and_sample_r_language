@@ -1,2 +1,70 @@
 # 如何解题
 
+## How to Solve It
+《How to Solve It》是由匈牙利数学家George Pólya于1945年出版的一本数学教育书籍。
+这本书主要关注解决数学问题的一般方法和思考过程，而不仅仅是特定数学问题的解决方案。
+Pólya通过这本书希望能够帮助读者更好地理解问题解决的基本原则，并将这些原则应用到各种不同类型的数学问题中。
+
+书中最著名的是Pólya提出的四步问题解决框架，即：
+
+1. **理解问题（Understand the Problem）**：确保你明白问题是什么，以及什么是已知的，什么是未知的。
+  
+2. **设计一个计划（Devise a Plan）**：思考如何接近问题，可能会涉及到绘制图表、列出方程式或者其他解决策略。
+
+3. **执行计划（Carry Out the Plan）**：按照你的计划去解决问题，这可能涉及到一些数学运算或逻辑推理。
+
+4. **回顾（Looking Back）**：检查你的答案是否正确，以及你的解决方法是否有效。这一步也可以用于反思和改进问题解决技巧。
+
+这四步方法不仅适用于数学问题，还可以广泛应用于科学、工程、商业和日常生活中的问题解决。
+
+这本书被广泛用于数学教育和教师培训，也受到了多个学科领域的高度评价。它不仅对数学教育有深远的影响，还在一定程度上影响了计算机科学、工程和其他科学领域的问题解决方法。
+
+## 首页原文如下
+
+(@) `UNDERSTANDING THE PROBLEM`
+
+First. You have to understand the problem.
+
+What is the unknown? What are the data? What is the condition?
+
+Is it possible to satisfy the condition? Is the condition sufficient to determine the unknown? Or 
+is it insufficient? Or redundant? Or contradictory?
+Draw a figure. Introduce suitable notation.
+
+Separate the various parts of the condition. Can you write them down?
+
+(@) `DEVISING A PLAN`
+
+Second. Find the connection between the data and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found. You should obtain eventually a plan of the solution.
+
+Have you seen it before? Or have you seen the same problem in a slightly different form?
+Do you know a related problem? Do you know a theorem that could be useful?
+Look at the unknown! And try to think of a familiar problem having the same or a similar unknown.
+Here is a problem related to yours and solved before. Could you use it? Could you use its result? Could you use its method? Should you introduce some auxiliary element in order to make its use possible?
+
+Could you restate the problem? Could you restate it still differently? Go back to definitions.
+If you cannot solve the proposed problem try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the condition, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or data, or both if necessary, so that the new unknown and the new data are nearer to each other?
+
+Did you use all the data? Did you use the whole condition? Have you taken into account all essential notions involved in the problem?
+
+(@) `CARRYING OUT THE PLAN`
+
+Third. Carry out your plan.
+
+Carrying out your plan of the solution, check each step. Can you see clearly that the step is correct? Can you prove that it is correct?
+
+(@) `Looking Back`
+
+Fourth. Examine the solution obtained.
+
+* Can you check the result? Can you check the argument?
+* Can you derive the solution differently? Can you see it at a glance?
+* Can you use the result, or the method, for some other problem?
+
+## 如何更好地解题
+我们平时在学习的时候都是经过简化抽象过的，解决的思路也是很明确，并不需要掌握太多的技巧。
+
+但是现实的问题可能很复杂，我们需要自己不断地将问题分解、细化，然后一步一步坚实地解决每一个子问题或者类似的问题。
+在每一步的基础上，我们不断深入问题的本质。
+最后再回到原问题，看看有没有得到解决。在此基础上，我们可以提出新的问题，或者改进解决方案。
+重复这个过程，不过问题越辩越明，我们的思路也不断得到扩展，解决问题的能力也会得到提升。

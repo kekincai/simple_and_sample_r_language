@@ -67,6 +67,55 @@
     "href": "01_R语言入门.html#如何解题",
     "title": "1  R语言入门",
     "section": "1.4 如何解题",
-    "text": "1.4 如何解题"
+    "text": "1.4 如何解题\n所以，学习一门编程语言并不是我们最终的目的，我们最后还是要去解决面临的实际问题。 所以在正式入门R语言之前，下一章将先为大家介绍数学家波利亚的书《如何解题》。"
+  },
+  {
+    "objectID": "02_如何解题.html#原文如下",
+    "href": "02_如何解题.html#原文如下",
+    "title": "2  如何解题",
+    "section": "2.1 原文如下",
+    "text": "2.1 原文如下\n\nUNDERSTANDING THE PROBLEM\n\nFirst. You have to understand the problem.\nWhat is the unknown? What are the data? What is the condition?\nIs it possible to satisfy the condition? Is the condition sufficient to determine the unknown? Or is it insufficient? Or redundant? Or contradictory? Draw a figure. Introduce suitable notation.\nSeparate the various parts of the condition. Can you write them down?\n\nDEVISING A PLAN\n\nSecond. Find the connection between the data and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found. You should obtain eventually a plan of the solution.\nHave you seen it before? Or have you seen the same problem in a slightly different form? Do you know a related problem? Do you know a theorem that could be useful? Look at the unknown! And try to think of a familiar problem having the same or a similar unknown. Here is a problem related to yours and solved before. Could you use it? Could you use its result? Could you use its method? Should you introduce some auxiliary element in order to make its use possible?\nCould you restate the problem? Could you restate it still differently? Go back to definitions. If you cannot solve the proposed problem try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the condition, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or data, or both if necessary, so that the new unknown and the new data are nearer to each other?\nDid you use all the data? Did you use the whole condition? Have you taken into account all essential notions involved in the problem?\n\nCARRYING OUT THE PLAN\n\nThird. Carry out your plan.\nCarrying out your plan of the solution, check each step. Can you see clearly that the step is correct? Can you prove that it is correct?\n\nLooking Back\n\nFourth. Examine the solution obtained.\n\nCan you check the result? Can you check the argument?\nCan you derive the solution differently? Can you see it at a glance?\nCan you use the result, or the method, for some other problem?"
+  },
+  {
+    "objectID": "01_R语言入门.html#r语言解决了哪些问题",
+    "href": "01_R语言入门.html#r语言解决了哪些问题",
+    "title": "1  R语言入门",
+    "section": "1.3 R语言解决了哪些问题",
+    "text": "1.3 R语言解决了哪些问题\n我想最重要的是它为统计分析提供了一整套工具，而且是免费。它的扩展包也非常丰富，可以满足各种各样的需求。此外，R语言还有一个很大的优势，就是它的可视化功能非常强大，可以帮助我们更好地理解数据。\n在各个领域内还有各种强大的付费分析工具，但是R语言的免费和开源使得它在学术界和工业界都得到了广泛的应用。"
+  },
+  {
+    "objectID": "01_R语言入门.html#r语言在解决哪些问题",
+    "href": "01_R语言入门.html#r语言在解决哪些问题",
+    "title": "1  R语言入门",
+    "section": "1.3 R语言在解决哪些问题",
+    "text": "1.3 R语言在解决哪些问题\n我想最重要的是它为统计分析提供了一整套工具。 它的扩展包也非常丰富，可以满足各种各样的需求。 此外，R语言还有一个很大的优势，就是它的可视化功能非常强大，可以帮助我们更好地理解数据。\n在各个领域内还有各种强大的付费分析工具，但是R语言的免费和开源使得它在学术界和工业界都得到了广泛的应用。\n\n统计分析和数据科学\n\n\n数据清洗\n描述性统计分析\n推断性统计分析\n机器学习模型构建\n\n\n生物信息学\n\n\n基因序列分析\n蛋白质结构预测\n生物标记物发现\n\n\n金融分析\n\n\n风险评估\n股票市场分析\n信用评分\n\n\n心理学研究\n\n\n心理测量和量表开发\n实验设计和数据分析\n行为和认知模型构建\n社会心理学研究（如群体动力、偏见等）\n\n\n市场研究\n\n\n消费者行为分析\n市场趋势预测\n产品定位\n\n\n医疗研究\n\n\n临床试验分析\n疾病预测\n医疗成本分析\n\n\n社会科学研究\n\n\n人口统计学分析\n调查数据分析\n社会网络分析\n\n\n地理信息系统（GIS）\n\n\n空间数据分析\n地图生成\n地理位置预测\n\n\n自然语言处理（NLP）\n\n\n文本挖掘\n情感分析\n语义分析\n\n\n工业制造\n\n\n质量控制\n供应链优化\n生产效率分析\n\n\n能源领域\n\n\n能源消耗分析\n可再生能源研究\n能源价格预测\n\n\n\n\n\n\n\nNote\n\n\n\n颜色标记部分是我过去几年在工作中使用R语言解决的问题。\n\n\n上述这些只是R语言在各个领域的应用的冰山一角，R语言的应用还在不断扩展。借助于扩展包，我们可以很方便利用前辈们的成果，快速地解决我们遇到的实际问题。"
+  },
+  {
+    "objectID": "01_R语言入门.html#r语言在不同领域的应用",
+    "href": "01_R语言入门.html#r语言在不同领域的应用",
+    "title": "1  R语言入门",
+    "section": "1.4 R语言在不同领域的应用",
+    "text": "1.4 R语言在不同领域的应用\n\n统计分析和数据科学\n\n\n数据清洗\n描述性统计分析\n推断性统计分析\n机器学习模型构建\n\n\n生物信息学\n\n\n基因序列分析\n蛋白质结构预测\n生物标记物发现\n\n\n金融分析\n\n\n风险评估\n股票市场分析\n信用评分\n\n\n心理学研究\n\n\n心理测量和量表开发\n实验设计和数据分析\n行为和认知模型构建\n社会心理学研究（如群体动力、偏见等）\n\n\n市场研究\n\n\n消费者行为分析\n市场趋势预测\n产品定位\n\n\n医疗研究\n\n\n临床试验分析\n疾病预测\n医疗成本分析\n\n\n社会科学研究\n\n\n人口统计学分析\n调查数据分析\n社会网络分析\n\n\n地理信息系统（GIS）\n\n\n空间数据分析\n地图生成\n地理位置预测\n\n\n自然语言处理（NLP）\n\n\n文本挖掘\n情感分析\n语义分析\n\n\n工业制造\n\n\n质量控制\n供应链优化\n生产效率分析\n\n\n能源领域\n\n\n能源消耗分析\n可再生能源研究\n能源价格预测\n\n\n\n\n\n\n\nNote\n\n\n\n颜色标记部分是我过去几年在工作中使用R语言解决的问题。\n\n\n上述这些只是R语言在各个领域的应用的冰山一角，R语言的应用还在不断扩展。借助于扩展包，我们可以很方便利用前辈们的成果，快速地解决我们遇到的实际问题。"
+  },
+  {
+    "objectID": "02_如何解题.html#how-to-solve-it",
+    "href": "02_如何解题.html#how-to-solve-it",
+    "title": "2  如何解题",
+    "section": "2.1 How to Solve It",
+    "text": "2.1 How to Solve It\n《How to Solve It》是由匈牙利数学家George Pólya于1945年出版的一本数学教育书籍。 这本书主要关注解决数学问题的一般方法和思考过程，而不仅仅是特定数学问题的解决方案。 Pólya通过这本书希望能够帮助读者更好地理解问题解决的基本原则，并将这些原则应用到各种不同类型的数学问题中。\n书中最著名的是Pólya提出的四步问题解决框架，即：\n\n理解问题（Understand the Problem）：确保你明白问题是什么，以及什么是已知的，什么是未知的。\n设计一个计划（Devise a Plan）：思考如何接近问题，可能会涉及到绘制图表、列出方程式或者其他解决策略。\n执行计划（Carry Out the Plan）：按照你的计划去解决问题，这可能涉及到一些数学运算或逻辑推理。\n回顾（Looking Back）：检查你的答案是否正确，以及你的解决方法是否有效。这一步也可以用于反思和改进问题解决技巧。\n\n这四步方法不仅适用于数学问题，还可以广泛应用于科学、工程、商业和日常生活中的问题解决。\n这本书被广泛用于数学教育和教师培训，也受到了多个学科领域的高度评价。它不仅对数学教育有深远的影响，还在一定程度上影响了计算机科学、工程和其他科学领域的问题解决方法。"
+  },
+  {
+    "objectID": "02_如何解题.html#首页原文如下",
+    "href": "02_如何解题.html#首页原文如下",
+    "title": "2  如何解题",
+    "section": "2.2 首页原文如下",
+    "text": "2.2 首页原文如下\n\nUNDERSTANDING THE PROBLEM\n\nFirst. You have to understand the problem.\nWhat is the unknown? What are the data? What is the condition?\nIs it possible to satisfy the condition? Is the condition sufficient to determine the unknown? Or is it insufficient? Or redundant? Or contradictory? Draw a figure. Introduce suitable notation.\nSeparate the various parts of the condition. Can you write them down?\n\nDEVISING A PLAN\n\nSecond. Find the connection between the data and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found. You should obtain eventually a plan of the solution.\nHave you seen it before? Or have you seen the same problem in a slightly different form? Do you know a related problem? Do you know a theorem that could be useful? Look at the unknown! And try to think of a familiar problem having the same or a similar unknown. Here is a problem related to yours and solved before. Could you use it? Could you use its result? Could you use its method? Should you introduce some auxiliary element in order to make its use possible?\nCould you restate the problem? Could you restate it still differently? Go back to definitions. If you cannot solve the proposed problem try to solve first some related problem. Could you imagine a more accessible related problem? A more general problem? A more special problem? An analogous problem? Could you solve a part of the problem? Keep only a part of the condition, drop the other part; how far is the unknown then determined, how can it vary? Could you derive something useful from the data? Could you think of other data appropriate to determine the unknown? Could you change the unknown or data, or both if necessary, so that the new unknown and the new data are nearer to each other?\nDid you use all the data? Did you use the whole condition? Have you taken into account all essential notions involved in the problem?\n\nCARRYING OUT THE PLAN\n\nThird. Carry out your plan.\nCarrying out your plan of the solution, check each step. Can you see clearly that the step is correct? Can you prove that it is correct?\n\nLooking Back\n\nFourth. Examine the solution obtained.\n\nCan you check the result? Can you check the argument?\nCan you derive the solution differently? Can you see it at a glance?\nCan you use the result, or the method, for some other problem?"
+  },
+  {
+    "objectID": "02_如何解题.html#如何更好地解题",
+    "href": "02_如何解题.html#如何更好地解题",
+    "title": "2  如何解题",
+    "section": "2.3 如何更好地解题",
+    "text": "2.3 如何更好地解题\n我们平时在学习的时候都是经过简化抽象过的，解决的思路也是很明确，并不需要掌握太多的技巧。\n但是现实的问题可能很复杂，我们需要自己不断地将问题分解、细化，然后一步一步坚实地解决每一个子问题或者类似的问题。 在每一步的基础上，我们不断深入问题的本质。 最后再回到原问题，看看有没有得到解决。在此基础上，我们可以提出新的问题，或者改进解决方案。 重复这个过程，不过问题越辩越明，我们的思路也不断得到扩展，解决问题的能力也会得到提升。"
   }
 ]
