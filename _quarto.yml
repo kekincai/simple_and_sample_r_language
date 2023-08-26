@@ -1,6 +1,9 @@
 project:
   type: book
   output-dir: docs
+  preview:
+    port: 1996
+    browser: false
 
 book:
   title: "R语言入门"
