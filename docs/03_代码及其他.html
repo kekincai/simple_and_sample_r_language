@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -161,7 +195,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">引用 &amp; 扩展阅读</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./version.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">写作进度</span></a>
   </div>
 </li>
     </ul>
@@ -174,7 +214,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#如何学好一门编程语言" id="toc-如何学好一门编程语言" class="nav-link active" data-scroll-target="#如何学好一门编程语言"><span class="header-section-number">3.1</span> 如何学好一门编程语言</a></li>
+  <li><a href="#有什么区别吗" id="toc-有什么区别吗" class="nav-link active" data-scroll-target="#有什么区别吗"><span class="header-section-number">3.1</span> 有什么区别吗</a></li>
+  <li><a href="#代码code" id="toc-代码code" class="nav-link" data-scroll-target="#代码code"><span class="header-section-number">3.2</span> 代码（Code）</a></li>
+  <li><a href="#脚本script" id="toc-脚本script" class="nav-link" data-scroll-target="#脚本script"><span class="header-section-number">3.3</span> 脚本（Script）</a></li>
+  <li><a href="#项目project" id="toc-项目project" class="nav-link" data-scroll-target="#项目project"><span class="header-section-number">3.4</span> 项目（Project）</a></li>
   </ul>
 </nav>
     </div>
@@ -198,16 +241,149 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="如何学好一门编程语言" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="如何学好一门编程语言"><span class="header-section-number">3.1</span> 如何学好一门编程语言</h2>
-<p>学习编程语言不仅仅是学习语法和函数。更重要的是学习如何解决问题和如何有效地使用这门语言来实现你的目标。以下是一些建议：</p>
+<p><a name="header"></a></p>
+<section id="有什么区别吗" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="有什么区别吗"><span class="header-section-number">3.1</span> 有什么区别吗</h2>
+<p>大家可能会有疑问，为什么一本R语言教程，怎么现在还没开始讲R语言呢？ 因为主要是面向非程序员的，所以在正式学习R语言之前，我们需要先了解一些基本的概念，比如代码、脚本和项目。 这些概念在编程中非常重要，同时也是我们学习R语言的基础。</p>
+</section>
+<section id="代码code" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="代码code"><span class="header-section-number">3.2</span> 代码（Code）</h2>
+<p>代码语句是编程语言的基本构成单位，可以用于实现特定功能或解决特定问题。</p>
+<ul>
+<li><strong>特点</strong>：
+<ul>
+<li>可以是单个语句或一组语句。</li>
+<li>通常较为简单，解决特定的小问题。</li>
+<li>时常需要复用，可以将其封装为函数。</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 单个简单的代码语句</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算平均值</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span> <span class="co"># 创建向量1到100</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v) <span class="co"># 计算平均值</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 50.5</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 一组复杂的代码语句</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出进度</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">101</span> <span class="co"># 创建向量1到100</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(v) <span class="co"># 计算向量长度</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq</span>(<span class="at">len =</span> n)) {</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 每执行20次，输出当前的进度</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    vi <span class="ot">&lt;-</span> v[i]</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (i <span class="sc">%%</span> <span class="dv">20</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 输出保留两位小数的百分比</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"%0.2f%%</span><span class="sc">\n</span><span class="st">"</span>, i <span class="sc">/</span> n <span class="sc">*</span> <span class="dv">100</span>))</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>19.80%
+39.60%
+59.41%
+79.21%
+99.01%</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>怎么写出<strong>更好</strong>的代码</p>
+</div>
+</div>
 <ol type="1">
-<li><strong>实践</strong>：编程是一种技能，需要通过实践来不断地提高。尝试做一些小项目，或者参与一些开源项目。</li>
-<li><strong>理解基础</strong>：确保你理解了编程语言的基础概念，如变量、函数和控制结构。</li>
-<li><strong>参与社区</strong>：加入相关的论坛和社区，与其他开发者交流，学习他们的经验和技巧。</li>
-<li><strong>持续学习</strong>：技术是不断发展的，确保你始终保持与时俱进。</li>
+<li><p><strong>明确目的</strong>：确保代码片段有一个明确和容易理解的任务。</p></li>
+<li><p><strong>变量命名</strong>：使用有意义和描述性强的变量名。</p></li>
+<li><p><strong>注释</strong>：添加必要的注释来解释代码的功能或某个复杂的操作。</p></li>
+<li><p><strong>简洁性</strong>：避免不必要的复杂性，代码应该尽可能简洁。</p></li>
+<li><p><strong>向量化</strong>：尽量使用R语言提供的原生函数。</p></li>
+<li><p><strong>可读性</strong>：保持代码的可读性，适当地使用空格和缩进。</p></li>
 </ol>
-<p>最后，记住，学习编程是一个持续的旅程，不是一个目的地。享受这个过程，你会发现它是非常有趣和有益的。</p>
+<p>遵循这些准则可以提高代码片段的质量，使其更易于理解和维护。</p>
+</section>
+<section id="脚本script" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="脚本script"><span class="header-section-number">3.3</span> 脚本（Script）</h2>
+<p>脚本是一组预编写的代码，用于自动执行一系列任务。</p>
+<ul>
+<li><p><strong>特点</strong>：</p>
+<ul>
+<li>通常用于数据处理、文件操作等。</li>
+<li>可以由多个函数和代码块组成。</li>
+<li>通常是单个文件，如 <code>.R</code> 文件。</li>
+</ul></li>
+<li><p><strong>脚本.r文件怎么组织好代码</strong></p>
+<ol type="1">
+<li><strong>注释和文档</strong>：文件开头添加脚本的目的和用法。</li>
+<li><strong>导入库</strong>：将所有需要的库放在文件开头。</li>
+<li><strong>全局变量</strong>：定义所有全局变量。</li>
+<li><strong>函数定义</strong>：定义所有函数。</li>
+<li><strong>主代码块</strong>：使用 <code>if(main)</code> 或直接在脚本底部添加主代码块。</li>
+</ol></li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 脚本说明</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 全局变量</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>total <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 函数定义</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>add <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) {</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(a <span class="sc">+</span> b)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 主代码块</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>total <span class="ot">&lt;-</span> <span class="fu">add</span>(<span class="dv">5</span>, <span class="dv">10</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="项目project" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="项目project"><span class="header-section-number">3.4</span> 项目（Project）</h2>
+<p>项目是一个更大的代码集合，通常包括多个脚本、数据文件、文档等。</p>
+<ul>
+<li><strong>特点</strong>：
+<ul>
+<li>有明确的目标和范围。</li>
+<li>通常包括版本控制、文档说明等。</li>
+<li>可以包含多个子模块和依赖。</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>项目怎么组织好代码</p>
+</div>
+</div>
+<ol type="1">
+<li><strong>目录结构</strong>：有组织的文件和文件夹结构。
+<ul>
+<li><code>/lib</code>： 常用代码库</li>
+<li><code>/src</code>： 源代码</li>
+<li><code>/data</code>： 数据源文件(csv等)</li>
+<li><code>/rdata</code>： 输出的数据文件(RData等)</li>
+<li><code>/out</code>： 输出的图片、报告等</li>
+<li><code>/docs</code>： 文档(非程序生成的文档)</li>
+<li><code>/tests</code>： 测试代码</li>
+</ul></li>
+<li><strong>版本控制</strong>：使用 Git 进行版本控制。</li>
+<li><strong>README</strong>：添加 README 文件，解释项目的目的、安装、使用等。</li>
+</ol>
+<p>通过以上的组织和实践，你可以更有效地管理 R 语言的代码、脚本和项目。</p>
+<p><a href="#header">⇧</a></p>
 
 
 </section>

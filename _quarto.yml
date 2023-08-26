@@ -19,6 +19,7 @@ book:
     - 08_数据可视化.qmd
     - 09_代码优化及并行.qmd
     - references.qmd
+    - version.qmd
   cover-image: cover.png
 
 bibliography: references.bib

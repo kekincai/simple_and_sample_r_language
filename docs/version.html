@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R语言入门 - 1&nbsp; R语言入门</title>
+<title>R语言入门 - 写作进度</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -64,8 +30,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./02_如何解题.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./references.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -107,7 +72,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_R语言入门.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R语言入门</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./version.html">写作进度</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -140,7 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_R语言入门.html" class="sidebar-item-text sidebar-link active">
+  <a href="./01_R语言入门.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R语言入门</span></span></a>
   </div>
 </li>
@@ -200,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./version.html" class="sidebar-item-text sidebar-link">
+  <a href="./version.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">写作进度</span></a>
   </div>
 </li>
@@ -210,24 +175,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#r语言历史" id="toc-r语言历史" class="nav-link active" data-scroll-target="#r语言历史"><span class="header-section-number">1.1</span> R语言历史</a></li>
-  <li><a href="#r语言的特点" id="toc-r语言的特点" class="nav-link" data-scroll-target="#r语言的特点"><span class="header-section-number">1.2</span> R语言的特点</a></li>
-  <li><a href="#谁在使用r语言" id="toc-谁在使用r语言" class="nav-link" data-scroll-target="#谁在使用r语言"><span class="header-section-number">1.3</span> 谁在使用R语言</a></li>
-  <li><a href="#r语言在解决哪些问题" id="toc-r语言在解决哪些问题" class="nav-link" data-scroll-target="#r语言在解决哪些问题"><span class="header-section-number">1.4</span> R语言在解决哪些问题</a></li>
-  <li><a href="#如何解题" id="toc-如何解题" class="nav-link" data-scroll-target="#如何解题"><span class="header-section-number">1.5</span> 如何解题</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R语言入门</span></h1>
+<h1 class="title">写作进度</h1>
 </div>
 
 
@@ -243,172 +198,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <p><a name="header"></a></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span>(<span class="st">"Hello friend. Welcome to the world of R language!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Hello friend. Welcome to the world of R language!</code></pre>
-</div>
-</div>
-<p>欢迎来到R语言的世界！R语言，一种广泛用于统计计算和图形的编程语言，已经成为数据科学家和统计学家的首选工具之一（另一个是大家更为熟知的Python😂）。</p>
-<p>当你运行上面的代码，你会看到一个友好的欢迎消息。这只是开始，让我们深入了解R语言的世界。</p>
-<section id="r语言历史" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="r语言历史"><span class="header-section-number">1.1</span> R语言历史</h2>
-<p>R语言的起源可以追溯到1976年，当时它是由新西兰的Ross Ihaka和Robert Gentleman在奥克兰大学开发的。它是S语言的一个实现，S语言是由贝尔实验室的John Chambers和同事们在1976年开发的。在R语言的源代码中还有很多S语言的留存代码，后面我们会时不时深入了解一下R语言的具体实现。</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>不用担心，我们不必去学习其中的C语言和Fortran代码。</p>
-</div>
-</div>
-<p>R语言的名字来源于其创始人的名字首字母。</p>
-<p>R语言的开发是为了提供一个免费、开源的统计计算环境，它不仅仅是一个编程语言，还包括了一个高效的数据存储和处理工具，以及一套广泛的统计和图形功能。</p>
-</section>
-<section id="r语言的特点" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="r语言的特点"><span class="header-section-number">1.2</span> R语言的特点</h2>
-<p>R语言是一门<strong>解释型语言</strong>，这意味着不需要进行复杂的编译过程就可以直接执行代码。 这一特点使得R语言在数据分析和统计计算中非常便利，允许用户快速地进行探索性数据分析和可视化。</p>
-<p>解释型的特性也使得R语言更易于学习和使用，特别是对于没有编程背景的人来说。 这种便利性使得R成为数据科学和统计分析的首选工具之一。</p>
-</section>
-<section id="谁在使用r语言" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="谁在使用r语言"><span class="header-section-number">1.3</span> 谁在使用R语言</h2>
-<p>R语言在学术界和工业界都得到了广泛的应用。许多研究者使用R进行统计分析和数据可视化。在工业界，尤其是在金融、生物技术、市场研究和社交媒体领域，R语言也得到了广泛的应用。</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>国内同学，尤其是学习生物、医学的同学可能有更深的体会。</p>
-</div>
-</div>
-<p>得益于它的易扩展性，大公司如Google, Facebook, Airbnb和New York Times都在使用R语言进行数据分析。此外，R语言的社区也非常活跃，有数千个扩展包，涵盖了从生态学到金融的各种领域。</p>
-</section>
-<section id="r语言在解决哪些问题" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="r语言在解决哪些问题"><span class="header-section-number">1.4</span> R语言在解决哪些问题</h2>
-<p>我想最重要的是它为统计分析提供了一整套工具。 它的扩展包也非常丰富，可以满足各种各样的需求。 此外，R语言还有一个很大的优势，就是它的可视化功能非常强大，可以帮助我们更好地理解数据。</p>
-<p>在各个领域内还有各种强大的付费分析工具，但是R语言的免费和开源使得它在学术界和工业界都得到了广泛的应用。</p>
-<ol class="example" type="1">
-<li>统计分析和数据科学</li>
-</ol>
-<ul>
-<li><code>数据清洗</code></li>
-<li><code>描述性统计分析</code></li>
-<li><code>推断性统计分析</code></li>
-<li><code>机器学习模型构建</code></li>
-</ul>
-<ol start="2" class="example" type="1">
-<li>生物信息学</li>
-</ol>
-<ul>
-<li>基因序列分析</li>
-<li>蛋白质结构预测</li>
-<li>生物标记物发现</li>
-</ul>
-<ol start="3" class="example" type="1">
-<li>金融分析</li>
-</ol>
-<ul>
-<li><code>风险评估</code></li>
-<li>股票市场分析</li>
-<li>信用评分</li>
-</ul>
-<ol start="4" class="example" type="1">
-<li>心理学研究</li>
-</ol>
-<ul>
-<li>心理测量和量表开发</li>
-<li>实验设计和数据分析</li>
-<li>行为和认知模型构建</li>
-<li>社会心理学研究（如群体动力、偏见等）</li>
-</ul>
-<ol start="5" class="example" type="1">
-<li>市场研究</li>
-</ol>
-<ul>
-<li><code>消费者行为分析</code></li>
-<li><code>市场趋势预测</code></li>
-<li>产品定位</li>
-</ul>
-<ol start="6" class="example" type="1">
-<li>医疗研究</li>
-</ol>
-<ul>
-<li>临床试验分析</li>
-<li>疾病预测</li>
-<li>医疗成本分析</li>
-</ul>
-<ol start="7" class="example" type="1">
-<li>社会科学研究</li>
-</ol>
-<ul>
-<li><code>人口统计学分析</code></li>
-<li>调查数据分析</li>
-<li>社会网络分析</li>
-</ul>
-<ol start="8" class="example" type="1">
-<li>地理信息系统（GIS）</li>
-</ol>
-<ul>
-<li>空间数据分析</li>
-<li>地图生成</li>
-<li>地理位置预测</li>
-</ul>
-<ol start="9" class="example" type="1">
-<li>自然语言处理（NLP）</li>
-</ol>
-<ul>
-<li><code>文本挖掘</code></li>
-<li>情感分析</li>
-<li>语义分析</li>
-</ul>
-<ol start="10" class="example" type="1">
-<li>工业制造</li>
-</ol>
-<ul>
-<li>质量控制</li>
-<li>供应链优化</li>
-<li>生产效率分析</li>
-</ul>
-<ol start="11" class="example" type="1">
-<li>能源领域</li>
-</ol>
-<ul>
-<li>能源消耗分析</li>
-<li>可再生能源研究</li>
-<li>能源价格预测</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><code>颜色标记部分</code>是我过去几年在工作中使用R语言解决的问题。</p>
-</div>
-</div>
-<p>上述这些只是R语言在各个领域的应用的冰山一角，R语言的应用还在不断扩展。 借助于扩展包，我们可以很方便利用前辈们的成果，快速地解决我们遇到的实际问题。</p>
-</section>
-<section id="如何解题" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="如何解题"><span class="header-section-number">1.5</span> 如何解题</h2>
-<p>所以，学习一门编程语言并不是我们最终的目的，我们最后还是要去解决面临的实际问题。 所以在正式入门R语言之前，下一章将先为大家介绍数学家波利亚的书<a href="https://book.douban.com/subject/2124114/" target="_blank">《如何解题》</a>。</p>
 <p><a href="#header">⇧</a></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -646,14 +438,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">前言</span>
+      <a href="./references.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">引用 &amp; 扩展阅读</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./02_如何解题.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">如何解题</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
