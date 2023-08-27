@@ -1,6 +1,6 @@
 ---
 date: "2023年 08月 20日"
-date-modified: "`r format(Sys.Date(), '%Y年 %m月 %d日')`（距发布日已经过去`r as.numeric(Sys.Date() - as.Date('2023/08/20'))`天）"
+date-modified: "`r format(Sys.Date(), '%Y年 %m月 %d日')`（距发表日已经过去`r as.numeric(Sys.Date() - as.Date('2023/08/20'))`天）"
 toc: false
 ---
 
