@@ -1,0 +1,68 @@
+/*-- scss:defaults --*/
+
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+// $font-family-sans-serif: "Noto Sans JP" !default;
+// $font-family-serif: "Noto Serif JP" !default;
+// $font-family-monospace: "Noto Sans Mono", "Fira Mono", monospace !default;
+
+/*-- scss:mixins --*/
+/* $grid-screen-inset-padding: 7em; */
+
+/*-- scss:rules --*/
+a {
+  text-decoration: none;
+}
+
+a.text-start {
+  font-weight: 600;
+}
+
+.fig-caption,
+figcaption {
+  text-align: center;
+}
+
+p {
+  line-height: 2em;
+}
+
+.cell-output {
+  border: 1px solid #BEBEBE;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+div.cell-output>pre {
+  margin-bottom: 0em;
+}
+
+main ol ol,
+main ul ul,
+main ol ul,
+main ul ol {
+  margin-bottom: 0em;
+}
+
+.center-table50 table {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.gt_table {
+  width: initial;
+}
+
+code {
+  font-size: 1em;
+}
+
+/*--
+body.docked .page-columns { // 本文領域の拡張
+  grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start] minmax(50px, 150px) [page-start-inset] 50px [body-start-outset] 50px [body-start] 1.5em [body-content-start] minmax(500px, calc( 1000px - 3em )) [body-content-end] 1.5em [body-end] 50px [body-end-outset] minmax(0px, 100px) [page-end-inset] 50px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];
+}
+--*/
