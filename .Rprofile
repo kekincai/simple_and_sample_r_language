@@ -1,5 +1,13 @@
 .First <- function() {
     cat("Hello World! \n")
+    library(knitr)
+    knitr::opts_chunk$set(
+        # dev = "ragg_png",
+        fig.align = "center",
+        dpi = 300,
+        fig.pos = "H",
+        attr.source = ".numberLines"
+    )
     addTaskCallback(
         function(expr, value, ok, visible) {
             prompt <- paste0(format(Sys.time(), "⏰%H时%M分 "), "💋 ")
@@ -27,9 +35,10 @@ open_dir <- function(dir = getwd()) {
     }
 }
 
-startproject <- function(dir) {
+startproject <- function(dir, open = FALSE) {
     # 开始一个新项目，并生成文件夹
     # param dir: 项目名称
+    # param open: 是否打开文件夹
     # return: NULL
 
     # **目录结构**：有组织的文件和文件夹结构。
@@ -46,8 +55,13 @@ startproject <- function(dir) {
     if (missing(dir)) {
         dir <- readline("请输入项目名称：")
     }
-    # 创建文件夹
-    dir.create(dir)
+    dir.create2 <- function(path, ...) {
+        # 如果dir不存在，那么创建文件夹
+        if (!dir.exists(path)) {
+            dir.create(path, ...)
+        }
+    }
+    dir.create2(dir)
     message("新建项目：", dir)
     message(
         "目录结构：", "\n",
@@ -62,14 +76,16 @@ startproject <- function(dir) {
         "    /doc：      文档(非程序生成的文档)\n",
         "    /test：     测试代码\n"
     )
-    dir.create(paste0(dir, "/lib"))
-    dir.create(paste0(dir, "/src"))
-    dir.create(paste0(dir, "/def"))
-    dir.create(paste0(dir, "/etc"))
-    dir.create(paste0(dir, "/data"))
-    dir.create(paste0(dir, "/rdata"))
-    dir.create(paste0(dir, "/out"))
-    dir.create(paste0(dir, "/doc"))
-    dir.create(paste0(dir, "/test"))
-    open_dir(dir)
+    dir.create2(paste0(dir, "/lib"))
+    dir.create2(paste0(dir, "/src"))
+    dir.create2(paste0(dir, "/def"))
+    dir.create2(paste0(dir, "/etc"))
+    dir.create2(paste0(dir, "/data"))
+    dir.create2(paste0(dir, "/rdata"))
+    dir.create2(paste0(dir, "/out"))
+    dir.create2(paste0(dir, "/doc"))
+    dir.create2(paste0(dir, "/test"))
+    if (open) {
+        open_dir(dir)
+    }
 }
