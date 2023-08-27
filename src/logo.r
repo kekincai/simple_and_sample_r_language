@@ -29,12 +29,12 @@ ellipsis <- function(a, b, h, k, col = "steelblue", add = FALSE) {
 }
 
 if (FALSE) {
-    source("logo.r")
+    source("./src/logo.r")
     ellipsis(1, 1, 0, 0, col = "grey")
 }
 
 logo <- function(
-    fn = "cover.png",
+    fn = "./out/cover.png",
     res = 50,
     w = 8 * res,
     h = 6 * res,
@@ -80,6 +80,6 @@ logo <- function(
 }
 
 if (FALSE) {
-    source("logo.r")
+    source("./src/logo.r")
     logo()
 }
