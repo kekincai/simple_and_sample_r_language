@@ -8,6 +8,8 @@
 
 问题反馈：[{{< var email.feedback >}}](mailto:{{< var email.feedback >}}?subject=问题反馈)
 
+Github：[R语言入门]({{< var address.git >}}){target="_blank"}
+
 
 ## 目录
 
