@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.340">
@@ -104,13 +104,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切换侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
       <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03_代码及其他.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">代码 &amp; 脚本 &amp; 项目</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="切换侧边栏导航" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="搜索" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -127,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="搜索"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -211,13 +211,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">目录</h2>
    
   <ul>
   <li><a href="#有什么区别吗" id="toc-有什么区别吗" class="nav-link active" data-scroll-target="#有什么区别吗"><span class="header-section-number">3.1</span> 有什么区别吗</a></li>
   <li><a href="#代码code" id="toc-代码code" class="nav-link" data-scroll-target="#代码code"><span class="header-section-number">3.2</span> 代码（Code）</a></li>
-  <li><a href="#脚本script" id="toc-脚本script" class="nav-link" data-scroll-target="#脚本script"><span class="header-section-number">3.3</span> 脚本（Script）</a></li>
-  <li><a href="#项目project" id="toc-项目project" class="nav-link" data-scroll-target="#项目project"><span class="header-section-number">3.4</span> 项目（Project）</a></li>
+  <li><a href="#脚本文件script" id="toc-脚本文件script" class="nav-link" data-scroll-target="#脚本文件script"><span class="header-section-number">3.3</span> 脚本文件（Script）</a></li>
+  <li><a href="#项目project" id="toc-项目project" class="nav-link" data-scroll-target="#项目project"><span class="header-section-number">3.4</span> 项目（Project）</a>
+  <ul class="collapse">
+  <li><a href="#项目架构" id="toc-项目架构" class="nav-link" data-scroll-target="#项目架构"><span class="header-section-number">3.4.1</span> 项目架构</a></li>
+  <li><a href="#创建项目" id="toc-创建项目" class="nav-link" data-scroll-target="#创建项目"><span class="header-section-number">3.4.2</span> 创建项目</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -244,7 +248,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><a name="header"></a></p>
 <section id="有什么区别吗" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="有什么区别吗"><span class="header-section-number">3.1</span> 有什么区别吗</h2>
-<p>大家可能会有疑问，为什么一本R语言教程，怎么现在还没开始讲R语言呢？ 因为主要是面向非程序员的，所以在正式学习R语言之前，我们需要先了解一些基本的概念，比如代码、脚本和项目。 这些概念在编程中非常重要，同时也是我们学习R语言的基础。</p>
+<p>大家可能会有疑问，为什么一本R语言教程，怎么现在还没开始讲R语言呢？</p>
+<p>因为主要是面向非程序员的，所以在正式学习R语言之前，我们需要先了解一些基本的概念，比如代码、脚本和项目。</p>
+<p>这些概念在编程中非常重要，同时也是我们学习R语言的基础。</p>
 </section>
 <section id="代码code" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="代码code"><span class="header-section-number">3.2</span> 代码（Code）</h2>
@@ -257,28 +263,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>时常需要复用，可以将其封装为函数。</li>
 </ul></li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 单个简单的代码语句</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 计算平均值</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span> <span class="co"># 创建向量1到100</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(v) <span class="co"># 计算平均值</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># 单个简单的代码语句</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="co"># 计算平均值</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>v <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span> <span class="co"># 创建向量1到100</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">mean</span>(v) <span class="co"># 计算平均值</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 50.5</code></pre>
 </div>
 </div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 一组复杂的代码语句</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 输出进度</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">101</span> <span class="co"># 创建向量1到100</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(v) <span class="co"># 计算向量长度</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq</span>(<span class="at">len =</span> n)) {</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 每执行20次，输出当前的进度</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    vi <span class="ot">&lt;-</span> v[i]</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (i <span class="sc">%%</span> <span class="dv">20</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 输出保留两位小数的百分比</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"%0.2f%%</span><span class="sc">\n</span><span class="st">"</span>, i <span class="sc">/</span> n <span class="sc">*</span> <span class="dv">100</span>))</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># 一组复杂的代码语句</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="co"># 输出进度</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>v <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">101</span> <span class="co"># 创建向量1到100</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(v) <span class="co"># 计算向量长度</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq</span>(<span class="at">len =</span> n)) {</span>
+<span id="cb3-6"><a href="#cb3-6"></a>    <span class="co"># 每执行20次，输出当前的进度</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>    vi <span class="ot">&lt;-</span> v[i]</span>
+<span id="cb3-8"><a href="#cb3-8"></a>    <span class="cf">if</span> (i <span class="sc">%%</span> <span class="dv">20</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb3-9"><a href="#cb3-9"></a>        <span class="co"># 输出保留两位小数的百分比</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>        <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"%0.2f%%</span><span class="sc">\n</span><span class="st">"</span>, i <span class="sc">/</span> n <span class="sc">*</span> <span class="dv">100</span>))</span>
+<span id="cb3-11"><a href="#cb3-11"></a>    }</span>
+<span id="cb3-12"><a href="#cb3-12"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>19.80%
 39.60%
@@ -293,7 +299,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -310,43 +316,234 @@ Tip
 </ol>
 <p>遵循这些准则可以提高代码片段的质量，使其更易于理解和维护。</p>
 </section>
-<section id="脚本script" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="脚本script"><span class="header-section-number">3.3</span> 脚本（Script）</h2>
+<section id="脚本文件script" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="脚本文件script"><span class="header-section-number">3.3</span> 脚本文件（Script）</h2>
 <p>脚本是一组预编写的代码，用于自动执行一系列任务。</p>
 <ul>
-<li><p><strong>特点</strong>：</p>
+<li><strong>特点</strong>：
 <ul>
 <li>通常用于数据处理、文件操作等。</li>
 <li>可以由多个函数和代码块组成。</li>
-<li>通常是单个文件，如 <code>.R</code> 文件。</li>
+<li>通常是单个文件，如 <code>.R</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> 文件。</li>
 </ul></li>
-<li><p><strong>脚本.r文件怎么组织好代码</strong></p>
-<ol type="1">
-<li><strong>注释和文档</strong>：文件开头添加脚本的目的和用法。</li>
-<li><strong>导入库</strong>：将所有需要的库放在文件开头。</li>
-<li><strong>全局变量</strong>：定义所有全局变量。</li>
-<li><strong>函数定义</strong>：定义所有函数。</li>
-<li><strong>主代码块</strong>：使用 <code>if(main)</code> 或直接在脚本底部添加主代码块。</li>
-</ol></li>
+<li>下面的示例是读取日本人口变化数据<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>，抽取其中年度人口总数的数据，并绘制折线图。</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 脚本说明</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 全局变量</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>total <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 函数定义</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>add <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) {</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(a <span class="sc">+</span> b)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 主代码块</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>total <span class="ot">&lt;-</span> <span class="fu">add</span>(<span class="dv">5</span>, <span class="dv">10</span>)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+注释
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>完整文件参见<code>src/03/plot_population.r</code>。</p>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">library</span>(knitr) <span class="co"># 加载knitr包</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="co"># 读取数据</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>fn <span class="ot">&lt;-</span> <span class="st">"data/03/年齢（５歳階級），男女別人口－全国（大正９年～平成27年）.csv"</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>d <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(fn, <span class="at">fileEncoding =</span> <span class="st">"cp932"</span>) <span class="co"># 读取日文、中文等非英文字符可能需要指定编码</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># 查看数据特征</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">str</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   395 obs. of  7 variables:
+ $ 元号       : chr  "大正" "大正" "大正" "大正" ...
+ $ 和暦.年.   : int  9 9 9 9 9 9 9 9 9 9 ...
+ $ 西暦.年.   : int  1920 1920 1920 1920 1920 1920 1920 1920 1920 1920 ...
+ $ 年齢5歳階級: chr  "総数" "0〜4歳" "5〜9歳" "10〜14歳" ...
+ $ 人口.総数. : int  55963053 7457715 6856920 6101567 5419057 4609310 3923949 3609450 3410738 3243764 ...
+ $ 人口.男.   : int  28044185 3752627 3467156 3089225 2749022 2316479 2008005 1833443 1707771 1640254 ...
+ $ 人口.女.   : int  27918868 3705088 3389764 3012342 2670035 2292831 1915944 1776007 1702967 1603510 ...</code></pre>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># 查看前几行数据</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(d))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">元号</th>
+<th style="text-align: right;">和暦.年.</th>
+<th style="text-align: right;">西暦.年.</th>
+<th style="text-align: left;">年齢5歳階級</th>
+<th style="text-align: right;">人口.総数.</th>
+<th style="text-align: right;">人口.男.</th>
+<th style="text-align: right;">人口.女.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">大正</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1920</td>
+<td style="text-align: left;">総数</td>
+<td style="text-align: right;">55963053</td>
+<td style="text-align: right;">28044185</td>
+<td style="text-align: right;">27918868</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">大正</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1920</td>
+<td style="text-align: left;">0〜4歳</td>
+<td style="text-align: right;">7457715</td>
+<td style="text-align: right;">3752627</td>
+<td style="text-align: right;">3705088</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">大正</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1920</td>
+<td style="text-align: left;">5〜9歳</td>
+<td style="text-align: right;">6856920</td>
+<td style="text-align: right;">3467156</td>
+<td style="text-align: right;">3389764</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">大正</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1920</td>
+<td style="text-align: left;">10〜14歳</td>
+<td style="text-align: right;">6101567</td>
+<td style="text-align: right;">3089225</td>
+<td style="text-align: right;">3012342</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">大正</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1920</td>
+<td style="text-align: left;">15〜19歳</td>
+<td style="text-align: right;">5419057</td>
+<td style="text-align: right;">2749022</td>
+<td style="text-align: right;">2670035</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">大正</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1920</td>
+<td style="text-align: left;">20〜24歳</td>
+<td style="text-align: right;">4609310</td>
+<td style="text-align: right;">2316479</td>
+<td style="text-align: right;">2292831</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># 获取年度及人口总数</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>dd <span class="ot">&lt;-</span> d[d<span class="sc">$</span>年齢5歳階級 <span class="sc">==</span> <span class="st">"総数"</span>, <span class="fu">c</span>(<span class="st">"西暦.年."</span>, <span class="st">"人口.総数."</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># 绘制折线图</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="co"># 设置字体 注意⚠️：这里使用的是日文的字体，不同操作系统可能还有区别，需要自行调整</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="fu">par</span>(<span class="at">family =</span> <span class="st">"HiraKakuProN-W3"</span>) </span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="fu">plot</span>(dd<span class="sc">$</span>西暦.年., dd<span class="sc">$</span>人口.総数.,</span>
+<span id="cb10-5"><a href="#cb10-5"></a>    <span class="at">type =</span> <span class="st">"o"</span>,</span>
+<span id="cb10-6"><a href="#cb10-6"></a>    <span class="at">pch =</span> <span class="dv">19</span>, <span class="co"># 设置点的形状 实心圆</span></span>
+<span id="cb10-7"><a href="#cb10-7"></a>    <span class="at">col =</span> <span class="st">"blue"</span>,</span>
+<span id="cb10-8"><a href="#cb10-8"></a>    <span class="at">xlab =</span> <span class="st">"年"</span>, <span class="at">ylab =</span> <span class="st">"人口総数"</span>,</span>
+<span id="cb10-9"><a href="#cb10-9"></a>    <span class="at">main =</span> <span class="st">"年推移日本人口総数の変化"</span></span>
+<span id="cb10-10"><a href="#cb10-10"></a>)</span>
+<span id="cb10-11"><a href="#cb10-11"></a></span>
+<span id="cb10-12"><a href="#cb10-12"></a><span class="co"># 添加人口变化值</span></span>
+<span id="cb10-13"><a href="#cb10-13"></a><span class="fu">par</span>(<span class="at">new =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-14"><a href="#cb10-14"></a><span class="fu">plot</span>(dd<span class="sc">$</span>西暦.年., <span class="fu">c</span>(<span class="cn">NA</span>, <span class="fu">diff</span>(dd<span class="sc">$</span>人口.総数.)), </span>
+<span id="cb10-15"><a href="#cb10-15"></a>    <span class="at">type =</span> <span class="st">"o"</span>,</span>
+<span id="cb10-16"><a href="#cb10-16"></a>    <span class="at">pch =</span> <span class="dv">23</span>, <span class="co"># 设置点的形状 空心菱形</span></span>
+<span id="cb10-17"><a href="#cb10-17"></a>    <span class="at">col =</span> <span class="st">"red"</span>,</span>
+<span id="cb10-18"><a href="#cb10-18"></a>    <span class="at">xlab =</span> <span class="st">""</span>, <span class="at">ylab =</span> <span class="st">""</span>, <span class="at">axes =</span> <span class="cn">FALSE</span></span>
+<span id="cb10-19"><a href="#cb10-19"></a>)</span>
+<span id="cb10-20"><a href="#cb10-20"></a><span class="fu">axis</span>(<span class="dv">4</span>) <span class="co"># 添加右侧的y轴</span></span>
+<span id="cb10-21"><a href="#cb10-21"></a><span class="fu">mtext</span>(<span class="st">"人口総数の変化値"</span>, <span class="at">side =</span> <span class="dv">4</span>, <span class="at">line =</span> <span class="sc">-</span><span class="fl">1.5</span>) <span class="co"># 添加右侧y轴的标签</span></span>
+<span id="cb10-22"><a href="#cb10-22"></a></span>
+<span id="cb10-23"><a href="#cb10-23"></a><span class="co"># 添加图例</span></span>
+<span id="cb10-24"><a href="#cb10-24"></a><span class="fu">legend</span>(<span class="st">"bottom"</span>,</span>
+<span id="cb10-25"><a href="#cb10-25"></a>    <span class="at">lty =</span> <span class="dv">1</span>,</span>
+<span id="cb10-26"><a href="#cb10-26"></a>    <span class="at">pch =</span> <span class="fu">c</span>(<span class="dv">19</span>, <span class="dv">23</span>),</span>
+<span id="cb10-27"><a href="#cb10-27"></a>    <span class="at">legend =</span> <span class="fu">c</span>(<span class="st">"人口総数"</span>, <span class="st">"人口総数の変化値"</span>), </span>
+<span id="cb10-28"><a href="#cb10-28"></a>    <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"red"</span>)</span>
+<span id="cb10-29"><a href="#cb10-29"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="03_代码及其他_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+提示
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>为了提高代码的可读性、可维护性和可重用性， 下面是一些在<code>.R</code>文件里组织好代码的最佳实践。</p>
+</div>
+</div>
+<ol class="example" type="1">
+<li><p>添加注释和文档</p></li>
+<li><p>使用合适的命名约定</p></li>
+</ol>
+<ul>
+<li>使用有意义的变量名和函数名。</li>
+<li>遵循一致的命名约定，例如使用下划线分隔符（<code>open_dir</code>）。</li>
+</ul>
+<ol start="3" class="example" type="1">
+<li>分段和分节</li>
+</ol>
+<ul>
+<li>使用空行和注释来分隔代码的不同部分或功能区块。</li>
+</ul>
+<ol start="4" class="example" type="1">
+<li>将代码分解为函数和代码块</li>
+</ol>
+<ul>
+<li>将重复或可重用的代码段封装成函数。</li>
+<li>如果可能，将相关的函数和代码块放在一起。</li>
+</ul>
+<ol start="5" class="example" type="1">
+<li>按逻辑顺序组织代码</li>
+</ol>
+<ul>
+<li>通常，数据导入和清洗应该在文件的顶部，而分析和可视化应该在后面。</li>
+</ul>
+<ol start="6" class="example" type="1">
+<li>避免硬编码</li>
+</ol>
+<ul>
+<li>使用变量而不是硬编码的数值。</li>
+</ul>
+<ol start="7" class="example" type="1">
+<li>使用版本控制</li>
+</ol>
+<ul>
+<li>使用版本控制系统（如Git）来跟踪代码的变更。</li>
+</ul>
+<ol start="8" class="example" type="1">
+<li>代码测试和检查</li>
+</ol>
+<ul>
+<li>在<code>if (FALSE) { }</code>代码块里测试代码。</li>
+</ul>
+<p>在后面的章节里，我们会不断践行这些最佳实践。</p>
 </section>
 <section id="项目project" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="项目project"><span class="header-section-number">3.4</span> 项目（Project）</h2>
-<p>项目是一个更大的代码集合，通常包括多个脚本、数据文件、文档等。</p>
+<section id="项目架构" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="项目架构"><span class="header-section-number">3.4.1</span> 项目架构</h3>
+<p>如果某个课题很复杂，那么可能需要多个脚本文件来实现，这时候就需要将这些脚本文件组织起来，形成一个项目。 通常不止脚本，还包括数据文件、文档等。</p>
 <ul>
 <li><strong>特点</strong>：
 <ul>
@@ -361,7 +558,7 @@ Tip
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+重要
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -373,19 +570,174 @@ Important
 <ul>
 <li><code>/lib</code>： 常用代码库</li>
 <li><code>/src</code>： 源代码</li>
+<li><code>/def</code>： 配置文件(函数需要复杂配置时使用)</li>
+<li><code>/etc</code>： 其他文件</li>
 <li><code>/data</code>： 数据源文件(csv等)</li>
 <li><code>/rdata</code>： 输出的数据文件(RData等)</li>
 <li><code>/out</code>： 输出的图片、报告等</li>
-<li><code>/docs</code>： 文档(非程序生成的文档)</li>
-<li><code>/tests</code>： 测试代码</li>
+<li><code>/doc</code>： 文档(非程序生成的文档)</li>
+<li><code>/test</code>： 测试代码</li>
 </ul></li>
 <li><strong>版本控制</strong>：使用 Git 进行版本控制。</li>
 <li><strong>README</strong>：添加 README 文件，解释项目的目的、安装、使用等。</li>
 </ol>
-<p>通过以上的组织和实践，你可以更有效地管理 R 语言的代码、脚本和项目。</p>
+</section>
+<section id="创建项目" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="创建项目"><span class="header-section-number">3.4.2</span> 创建项目</h3>
+<p>大家如果使用RStudio的话，可以使用RStudio的项目功能，可以很方便地管理项目。但这里我们自己手动创建并管理项目。</p>
+<p>这里先向大家介绍<code>.Rprofile</code>。</p>
+<p><code>.Rprofile</code> 是一个 R 语言的初始化文件，它在 R 会话（session）启动时自动运行。这个文件允许你设置环境变量、加载包、执行函数或者运行任何其他 R 代码，从而定制你的 R 环境。</p>
+<ul>
+<li>位置</li>
+</ul>
+<div>
+<ol type="1">
+<li>在Windows 上：</li>
+</ol>
+<ul>
+<li><p>系统级的 <code>.Rprofile</code> 通常位于 R 的安装目录下的 <code>etc</code> 文件夹中，路径可能类似于 <code>C:\Program Files\R\R-x.y.z\etc\Rprofile.site</code>。</p></li>
+<li><p>用户级的 <code>.Rprofile</code> 通常位于用户的文档文件夹中的 <code>R</code> 目录下，路径可能是 <code>C:\Users\[username]\Documents\R\Rprofile</code>。</p></li>
+</ul>
+<ol start="2" type="1">
+<li>在 macOS 和 Linux 上：</li>
+</ol>
+<ul>
+<li><p>系统级的 <code>.Rprofile</code> 通常位于 <code>/Library/Frameworks/R.framework/Resources/etc/</code>（macOS）或 <code>/etc/R/</code>（Linux）。</p></li>
+<li><p>用户级的 <code>.Rprofile</code> 通常位于用户的主目录下的 <code>.Rprofile</code>，路径可能是 <code>/Users/[username]/.Rprofile</code>（macOS）或 <code>/home/[username]/.Rprofile</code>（Linux）。</p></li>
+</ul>
+<ol start="3" type="1">
+<li>项目级的 <code>.Rprofile</code></li>
+</ol>
+<p>无论是哪个操作系统，项目级的 <code>.Rprofile</code> 文件通常位于项目的根目录中。</p>
+</div>
+<p>虽然文件的地址看起来比较复杂，一般来说，只要设置用户级的 <code>.Rprofile</code> 就可以了。</p>
+<ul>
+<li>用途
+<ul>
+<li><strong>环境定制</strong>：设置图形参数、选项（<code>options()</code>）或者环境变量。</li>
+<li><strong>自动加载包</strong>：自动加载常用的 R 包。</li>
+<li><strong>函数定义</strong>：定义常用的自定义函数。</li>
+</ul></li>
+<li>示例</li>
+</ul>
+<p>一个简单的 <code>.Rprofile</code> 文件可能如下：</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>.First <span class="ot">&lt;-</span> <span class="cf">function</span>() {</span>
+<span id="cb11-2"><a href="#cb11-2"></a>    <span class="co"># R语言session启动时运行</span></span>
+<span id="cb11-3"><a href="#cb11-3"></a>    <span class="fu">cat</span>(<span class="st">"Hello World! </span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb11-4"><a href="#cb11-4"></a>    <span class="fu">addTaskCallback</span>( <span class="co"># 自动更新session的提示符</span></span>
+<span id="cb11-5"><a href="#cb11-5"></a>        <span class="cf">function</span>(expr, value, ok, visible) {</span>
+<span id="cb11-6"><a href="#cb11-6"></a>            prompt <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="fu">format</span>(<span class="fu">Sys.time</span>(), <span class="st">"⏰%H时%M分 "</span>), <span class="st">"💋 "</span>)</span>
+<span id="cb11-7"><a href="#cb11-7"></a>            <span class="fu">options</span>(<span class="at">prompt =</span> prompt, <span class="at">continue =</span> <span class="st">"+</span><span class="sc">\t</span><span class="st">"</span>)</span>
+<span id="cb11-8"><a href="#cb11-8"></a>            <span class="cn">TRUE</span></span>
+<span id="cb11-9"><a href="#cb11-9"></a>        }</span>
+<span id="cb11-10"><a href="#cb11-10"></a>    )</span>
+<span id="cb11-11"><a href="#cb11-11"></a>}</span>
+<span id="cb11-12"><a href="#cb11-12"></a></span>
+<span id="cb11-13"><a href="#cb11-13"></a>.Last <span class="ot">&lt;-</span> <span class="cf">function</span>() {</span>
+<span id="cb11-14"><a href="#cb11-14"></a>    <span class="co"># R语言session结束时运行</span></span>
+<span id="cb11-15"><a href="#cb11-15"></a>    <span class="fu">graphics.off</span>() <span class="co"># a small safety measure.</span></span>
+<span id="cb11-16"><a href="#cb11-16"></a>    <span class="fu">cat</span>(<span class="st">"See you next time! </span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb11-17"><a href="#cb11-17"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>startproject <span class="ot">&lt;-</span> <span class="cf">function</span>(dir, <span class="at">open =</span> <span class="cn">FALSE</span>) {</span>
+<span id="cb12-2"><a href="#cb12-2"></a>    <span class="co"># 开始一个新项目，并生成文件夹</span></span>
+<span id="cb12-3"><a href="#cb12-3"></a>    <span class="co"># param dir: 项目名称</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>    <span class="co"># param open: 是否打开文件夹</span></span>
+<span id="cb12-5"><a href="#cb12-5"></a>    <span class="co"># return: NULL</span></span>
+<span id="cb12-6"><a href="#cb12-6"></a></span>
+<span id="cb12-7"><a href="#cb12-7"></a>    <span class="co"># **目录结构**：有组织的文件和文件夹结构。</span></span>
+<span id="cb12-8"><a href="#cb12-8"></a>    <span class="co"># - `/lib`：      常用代码库</span></span>
+<span id="cb12-9"><a href="#cb12-9"></a>    <span class="co"># - `/src`：      源代码</span></span>
+<span id="cb12-10"><a href="#cb12-10"></a>    <span class="co"># - `/def`：      配置文件(函数需要复杂配置时使用)</span></span>
+<span id="cb12-11"><a href="#cb12-11"></a>    <span class="co"># - `/etc`：      其他文件</span></span>
+<span id="cb12-12"><a href="#cb12-12"></a>    <span class="co"># - `/data`：     数据源文件(csv等)</span></span>
+<span id="cb12-13"><a href="#cb12-13"></a>    <span class="co"># - `/rdata`：    输出的数据文件(RData等)</span></span>
+<span id="cb12-14"><a href="#cb12-14"></a>    <span class="co"># - `/out`：      输出的图片、报告等</span></span>
+<span id="cb12-15"><a href="#cb12-15"></a>    <span class="co"># - `/doc`：     文档(非程序生成的文档)</span></span>
+<span id="cb12-16"><a href="#cb12-16"></a>    <span class="co"># - `/test`：    测试代码</span></span>
+<span id="cb12-17"><a href="#cb12-17"></a></span>
+<span id="cb12-18"><a href="#cb12-18"></a>    <span class="cf">if</span> (<span class="fu">missing</span>(dir)) {</span>
+<span id="cb12-19"><a href="#cb12-19"></a>        dir <span class="ot">&lt;-</span> <span class="fu">readline</span>(<span class="st">"请输入项目名称："</span>)</span>
+<span id="cb12-20"><a href="#cb12-20"></a>    }</span>
+<span id="cb12-21"><a href="#cb12-21"></a>    dir.create2 <span class="ot">&lt;-</span> <span class="cf">function</span>(path, ...) {</span>
+<span id="cb12-22"><a href="#cb12-22"></a>        <span class="co"># 如果dir不存在，那么创建文件夹</span></span>
+<span id="cb12-23"><a href="#cb12-23"></a>        <span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(path)) {</span>
+<span id="cb12-24"><a href="#cb12-24"></a>            <span class="fu">dir.create</span>(path, ...)</span>
+<span id="cb12-25"><a href="#cb12-25"></a>        }</span>
+<span id="cb12-26"><a href="#cb12-26"></a>    }</span>
+<span id="cb12-27"><a href="#cb12-27"></a>    <span class="fu">dir.create2</span>(dir)</span>
+<span id="cb12-28"><a href="#cb12-28"></a>    <span class="fu">message</span>(<span class="st">"新建项目："</span>, dir)</span>
+<span id="cb12-29"><a href="#cb12-29"></a>    <span class="fu">message</span>(</span>
+<span id="cb12-30"><a href="#cb12-30"></a>        <span class="st">"目录结构："</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-31"><a href="#cb12-31"></a>        dir, <span class="st">"/    </span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-32"><a href="#cb12-32"></a>        <span class="st">"    /lib：      常用代码库</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-33"><a href="#cb12-33"></a>        <span class="st">"    /src：      源代码</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-34"><a href="#cb12-34"></a>        <span class="st">"    /def：      配置文件(函数需要复杂配置时使用)</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-35"><a href="#cb12-35"></a>        <span class="st">"    /etc：      其他文件</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-36"><a href="#cb12-36"></a>        <span class="st">"    /data：     数据源文件(csv等)</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-37"><a href="#cb12-37"></a>        <span class="st">"    /rdata：    输出的数据文件(RData等)</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-38"><a href="#cb12-38"></a>        <span class="st">"    /out：      输出的图片、报告等</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-39"><a href="#cb12-39"></a>        <span class="st">"    /doc：      文档(非程序生成的文档)</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb12-40"><a href="#cb12-40"></a>        <span class="st">"    /test：     测试代码</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb12-41"><a href="#cb12-41"></a>    )</span>
+<span id="cb12-42"><a href="#cb12-42"></a>    <span class="fu">dir.create2</span>(<span class="fu">paste0</span>(dir, <span class="st">"/lib"</span>))</span>
+<span id="cb12-43"><a href="#cb12-43"></a>    <span class="fu">dir.create2</span>(<span class="fu">paste0</span>(dir, <span class="st">"/src"</span>))</span>
+<span id="cb12-44"><a href="#cb12-44"></a>    <span class="fu">dir.create2</span>(<span class="fu">paste0</span>(dir, <span class="st">"/def"</span>))</span>
+<span id="cb12-45"><a href="#cb12-45"></a>    <span class="fu">dir.create2</span>(<span class="fu">paste0</span>(dir, <span class="st">"/etc"</span>))</span>
+<span id="cb12-46"><a href="#cb12-46"></a>    <span class="fu">dir.create2</span>(<span class="fu">paste0</span>(dir, <span class="st">"/data"</span>))</span>
+<span id="cb12-47"><a href="#cb12-47"></a>    <span class="fu">dir.create2</span>(<span class="fu">paste0</span>(dir, <span class="st">"/rdata"</span>))</span>
+<span id="cb12-48"><a href="#cb12-48"></a>    <span class="fu">dir.create2</span>(<span class="fu">paste0</span>(dir, <span class="st">"/out"</span>))</span>
+<span id="cb12-49"><a href="#cb12-49"></a>    <span class="fu">dir.create2</span>(<span class="fu">paste0</span>(dir, <span class="st">"/doc"</span>))</span>
+<span id="cb12-50"><a href="#cb12-50"></a>    <span class="fu">dir.create2</span>(<span class="fu">paste0</span>(dir, <span class="st">"/test"</span>))</span>
+<span id="cb12-51"><a href="#cb12-51"></a>    <span class="cf">if</span> (open) {</span>
+<span id="cb12-52"><a href="#cb12-52"></a>        <span class="fu">open_dir</span>(dir)</span>
+<span id="cb12-53"><a href="#cb12-53"></a>    }</span>
+<span id="cb12-54"><a href="#cb12-54"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>注意事项
+<ul>
+<li><code>.Rprofile</code> 在 R 会话开始时只运行一次，所以不适用于动态设置。</li>
+<li>修改全局 <code>.Rprofile</code> 可能会影响所有 R 用户（如果你在多用户环境中），所以通常建议在用户目录或项目目录中设置 <code>.Rprofile</code>。</li>
+</ul></li>
+</ul>
+<p>使用 <code>.Rprofile</code> 可以大大提高工作效率，但也需要谨慎，以避免不必要的副作用或错误。</p>
+<p>上述<code>.Rprofile</code>文件保存在本书根目录。</p>
+<p>我们将<code>startproject</code>函数保存在<code>Rprofile</code>里，这样每次启动R session的时候， 执行<code>startproject</code>函数，可以创建一个新的项目。</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">startproject</span>(<span class="st">"myproject"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>新建项目：myproject</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>目录结构：
+myproject/    
+    /lib：      常用代码库
+    /src：      源代码
+    /def：      配置文件(函数需要复杂配置时使用)
+    /etc：      其他文件
+    /data：     数据源文件(csv等)
+    /rdata：    输出的数据文件(RData等)
+    /out：      输出的图片、报告等
+    /doc：      文档(非程序生成的文档)
+    /test：     测试代码</code></pre>
+</div>
+</div>
+<p>通过以上的组织和实践，你可以更有效地管理R语言的代码、脚本和项目。</p>
+<p>下面就让我们真正踏入R语言的世界吧。</p>
 <p><a href="#header">⇧</a></p>
 
 
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>.R或者.r文件，两者都是R语言源文件后缀名。使用的时候并没有严格区分。实际上，任何后缀名的文本文件都可以。。。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>日本政府統計の総合窓口<a href="https://www.e-stat.go.jp/" class="uri">https://www.e-stat.go.jp/</a>，数据更新很及时，感兴趣可以自己研究研究。<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -563,25 +915,90 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
+      // Handle positioning of the toggle
+      window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
           }
-        });
+        };
+      }
+      const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+      for (let i=0; i<annoteTargets.length; i++) {
+        const annoteTarget = annoteTargets[i];
+        const targetCell = annoteTarget.getAttribute("data-target-cell");
+        const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+        const contentFn = () => {
+          const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          if (content) {
+            const tipContent = content.cloneNode(true);
+            tipContent.classList.add("code-annotation-tip-content");
+            return tipContent.outerHTML;
+          }
+        }
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          onShow: (instance) => {
+            selectCodeLines(instance.reference);
+            instance.reference.classList.add('code-annotation-active');
+            window.tippy.hideAll();
+          },
+          onHide: (instance) => {
+            unselectCodeLines();
+            instance.reference.classList.remove('code-annotation-active');
+          },
+          maxWidth: 300,
+          delay: [50, 0],
+          duration: [200, 0],
+          offset: [5, 10],
+          arrow: true,
+          appendTo: function(el) {
+            return el.parentElement.parentElement.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto',
+          placement: 'right',
+          popperOptions: {
+            modifiers: [
+            {
+              name: 'flip',
+              options: {
+                flipVariations: false, // true by default
+                allowedAutoPlacements: ['right'],
+                fallbackPlacements: ['right', 'top', 'top-start', 'top-end'],
+              },
+            },
+            {
+              name: 'preventOverflow',
+              options: {
+                mainAxis: false,
+                altAxis: false
+              }
+            }
+            ]        
+          }      
+        };
+        window.tippy(annoteTarget, config); 
       }
   const findCites = (el) => {
     const parentEl = el.parentElement;
@@ -620,6 +1037,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">

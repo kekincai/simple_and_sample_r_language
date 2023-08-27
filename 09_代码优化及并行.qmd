@@ -2,4 +2,13 @@
 
 <a name="header"></a>
 
+## 代码优化
+
+### 循环for、apply、Vectorize
+
+
+## 长宽数据转换
+
+## 并行执行
+
 [⇧](#header)
