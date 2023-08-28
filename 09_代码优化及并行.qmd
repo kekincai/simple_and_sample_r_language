@@ -11,4 +11,16 @@
 
 ## 并行执行
 
+```{r}
+# library(doParallel)
+# nclusters <- detectCores()
+# cl <- makeCluster(nclusters - 1)
+# registerDoParallel(cl)
+
+# foreach(i = 1:10) %dopar% {
+#     # do something
+# }
+
+```
+
 [⇧](#header)

@@ -1,5 +1,14 @@
 # 函数 & 程序流程控制
 
+## 函数
+
+## 程序流程控制
+
+### if (cond) { ... } else { ... }
+
+### for (i in seq(along.with = x)) { ... }
+
+
 <a name="header"></a>
 
 [⇧](#header)

@@ -12,6 +12,22 @@ book:
   author: "金太阳无敌"
   date: last-modified
   date-format: "YYYY/MM/DD"
+  cover-image: ./out/cover.png
+  repo-url: https://github.com/kekincai/simple_and_sample_r_language
+  sharing: [twitter, facebook]
+  sidebar: 
+    style: docked
+    pinned: true
+  page-navigation: true
+  twitter-card:
+    title: "R语言入门"
+    description: "这是一本关于R语言入门的小册子。"
+    card-style: summary
+    image: "out/cover.png"
+  open-graph:
+    title: "R语言入门"
+    description: "这是一本关于R语言入门的小册子。"
+    image: "out/cover.png"
   chapters:
     - index.qmd
     - 01_R语言入门.qmd
@@ -25,7 +41,6 @@ book:
     - 09_代码优化及并行.qmd
     - references.qmd
     - version.qmd
-  cover-image: ./out/cover.png
 
 bibliography: references.bib
 
@@ -34,9 +49,9 @@ format:
     theme: 
       - cosmo
       - rn4e.scss
-    grid:
-      sidebar-width: 375px
-    number-sections: true
+    # grid:
+    #   sidebar-width: 375px
+    # number-sections: true
     highlight-style: a11y
     html-math-method: mathjax
     toc: true

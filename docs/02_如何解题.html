@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -49,22 +48,30 @@ ul.task-list li input[type="checkbox"] {
   "type": "textbox",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交"
   }
 }</script>
 
 
+<meta property="og:title" content="R语言入门">
+<meta property="og:description" content="这是一本关于R语言入门的小册子。">
+<meta property="og:image" content="out/cover.png">
+<meta property="og:site-name" content="R语言入门">
+<meta name="twitter:title" content="R语言入门">
+<meta name="twitter:description" content="这是一本关于R语言入门的小册子。">
+<meta name="twitter:image" content="out/cover.png">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -85,10 +92,30 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">R语言入门</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/kekincai/simple_and_sample_r_language" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -143,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./07_数据导入导出.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">数据导入 &amp;导出</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">导入 &amp;导出</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -218,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>回顾（Looking Back）</strong>：检查你的答案是否正确，以及你的解决方法是否有效。这一步也可以用于反思和改进问题解决技巧。</p></li>
 </ol>
 <p>这四步方法不仅适用于数学问题，还可以广泛应用于科学、工程、商业和日常生活中的问题解决。</p>
-<p>这本书被广泛用于数学教育和教师培训，也受到了多个学科领域的高度评价。它不仅对数学教育有深远的影响，还在一定程度上影响了计算机科学、工程和其他科学领域的问题解决方法。</p>
+<p>这本书被广泛用于数学教育和教师培训，也受到了多个学科领域的高度评价。 它不仅对数学教育有深远的影响，还在一定程度上影响了计算机科学、工程和其他科学领域的问题解决方法。</p>
 </section>
 <section id="首页原文如下" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="首页原文如下"><span class="header-section-number">2.2</span> 首页原文如下</h2>
@@ -255,6 +282,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="2.3" class="anchored" data-anchor-id="如何更好地解题"><span class="header-section-number">2.3</span> 如何更好地解题</h2>
 <p>我们平时在学习的时候都是经过简化抽象过的，解决的思路也是很明确，并不需要掌握太多的技巧。</p>
 <p>但是现实的问题可能很复杂，我们需要自己不断地将问题分解、细化，然后一步一步坚实地解决每一个子问题或者类似的问题。 在每一步的基础上，我们不断深入问题的本质。 最后再回到原问题，看看有没有得到解决。在此基础上，我们可以提出新的问题，或者改进解决方案。 重复这个过程，不过问题越辩越明，我们的思路也不断得到扩展，解决问题的能力也会得到提升。</p>
+<p>说实话，我也是工作之后才读到这本书，相见恨晚。 在解决实际课题的时候，我的桌旁总是放着这本书，时不时翻翻，总能有所收获。</p>
 <p><a href="#header">⇧</a></p>
 
 
@@ -315,12 +343,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "已复制");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "已复制");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

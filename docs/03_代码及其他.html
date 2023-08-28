@@ -58,7 +58,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -83,22 +82,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "type": "textbox",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交"
   }
 }</script>
 
 
+<meta property="og:title" content="R语言入门">
+<meta property="og:description" content="这是一本关于R语言入门的小册子。">
+<meta property="og:image" content="out/cover.png">
+<meta property="og:site-name" content="R语言入门">
+<meta name="twitter:title" content="R语言入门">
+<meta name="twitter:description" content="这是一本关于R语言入门的小册子。">
+<meta name="twitter:image" content="out/cover.png">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -119,10 +126,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">R语言入门</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/kekincai/simple_and_sample_r_language" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -177,7 +204,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./07_数据导入导出.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">数据导入 &amp;导出</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">导入 &amp;导出</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -267,7 +294,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># 单个简单的代码语句</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="co"># 计算平均值</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a>v <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span> <span class="co"># 创建向量1到100</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">mean</span>(v) <span class="co"># 计算平均值</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">mean</span>(v) <span class="co"># 计算平均值</span></span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 50.5</code></pre>
 </div>
@@ -284,7 +311,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-9"><a href="#cb3-9"></a>        <span class="co"># 输出保留两位小数的百分比</span></span>
 <span id="cb3-10"><a href="#cb3-10"></a>        <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"%0.2f%%</span><span class="sc">\n</span><span class="st">"</span>, i <span class="sc">/</span> n <span class="sc">*</span> <span class="dv">100</span>))</span>
 <span id="cb3-11"><a href="#cb3-11"></a>    }</span>
-<span id="cb3-12"><a href="#cb3-12"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-12"><a href="#cb3-12"></a>}</span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>19.80%
 39.60%
@@ -346,11 +373,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-2"><a href="#cb5-2"></a></span>
 <span id="cb5-3"><a href="#cb5-3"></a><span class="co"># 读取数据</span></span>
 <span id="cb5-4"><a href="#cb5-4"></a>fn <span class="ot">&lt;-</span> <span class="st">"data/03/年齢（５歳階級），男女別人口－全国（大正９年～平成27年）.csv"</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a>d <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(fn, <span class="at">fileEncoding =</span> <span class="st">"cp932"</span>) <span class="co"># 读取日文、中文等非英文字符可能需要指定编码</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-5"><a href="#cb5-5"></a>d <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(fn, <span class="at">fileEncoding =</span> <span class="st">"cp932"</span>) <span class="co"># 读取日文、中文等非英文字符可能需要指定编码</span></span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># 查看数据特征</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">str</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">str</span>(d)</span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   395 obs. of  7 variables:
  $ 元号       : chr  "大正" "大正" "大正" "大正" ...
@@ -364,7 +391,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># 查看前几行数据</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(d))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-2"><a href="#cb8-2"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(d))</span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
 <thead>
@@ -439,7 +466,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># 获取年度及人口总数</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a>dd <span class="ot">&lt;-</span> d[d<span class="sc">$</span>年齢5歳階級 <span class="sc">==</span> <span class="st">"総数"</span>, <span class="fu">c</span>(<span class="st">"西暦.年."</span>, <span class="st">"人口.総数."</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-2"><a href="#cb9-2"></a>dd <span class="ot">&lt;-</span> d[d<span class="sc">$</span>年齢5歳階級 <span class="sc">==</span> <span class="st">"総数"</span>, <span class="fu">c</span>(<span class="st">"西暦.年."</span>, <span class="st">"人口.総数."</span>)]</span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># 绘制折线图</span></span>
@@ -470,7 +497,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-26"><a href="#cb10-26"></a>    <span class="at">pch =</span> <span class="fu">c</span>(<span class="dv">19</span>, <span class="dv">23</span>),</span>
 <span id="cb10-27"><a href="#cb10-27"></a>    <span class="at">legend =</span> <span class="fu">c</span>(<span class="st">"人口総数"</span>, <span class="st">"人口総数の変化値"</span>), </span>
 <span id="cb10-28"><a href="#cb10-28"></a>    <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"red"</span>)</span>
-<span id="cb10-29"><a href="#cb10-29"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-29"><a href="#cb10-29"></a>)</span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -638,7 +665,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-14"><a href="#cb11-14"></a>    <span class="co"># R语言session结束时运行</span></span>
 <span id="cb11-15"><a href="#cb11-15"></a>    <span class="fu">graphics.off</span>() <span class="co"># a small safety measure.</span></span>
 <span id="cb11-16"><a href="#cb11-16"></a>    <span class="fu">cat</span>(<span class="st">"See you next time! </span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb11-17"><a href="#cb11-17"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-17"><a href="#cb11-17"></a>}</span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>startproject <span class="ot">&lt;-</span> <span class="cf">function</span>(dir, <span class="at">open =</span> <span class="cn">FALSE</span>) {</span>
@@ -694,7 +721,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb12-51"><a href="#cb12-51"></a>    <span class="cf">if</span> (open) {</span>
 <span id="cb12-52"><a href="#cb12-52"></a>        <span class="fu">open_dir</span>(dir)</span>
 <span id="cb12-53"><a href="#cb12-53"></a>    }</span>
-<span id="cb12-54"><a href="#cb12-54"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-54"><a href="#cb12-54"></a>}</span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>注意事项
@@ -707,7 +734,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>上述<code>.Rprofile</code>文件保存在本书根目录。</p>
 <p>我们将<code>startproject</code>函数保存在<code>Rprofile</code>里，这样每次启动R session的时候， 执行<code>startproject</code>函数，可以创建一个新的项目。</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">startproject</span>(<span class="st">"myproject"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r numberLines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">startproject</span>(<span class="st">"myproject"</span>)</span></code><button title="复制到剪贴板" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>新建项目：myproject</code></pre>
 </div>
@@ -795,12 +822,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "已复制");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "已复制");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
